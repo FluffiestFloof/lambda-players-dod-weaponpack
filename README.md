@@ -22,3 +22,5 @@ Currently implements the following weapons;
 - M1 Carbine
 - Springfield M1903A4
 - M1A1 Thompson
+
+![dod](https://user-images.githubusercontent.com/9823203/207096256-d612f9db-34f4-442d-9101-0cd7b644da8b.png)
