@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models/lambdaplayers/dayofdefeat/p_panzerschreck"
+	"$alphatest"	"1"
+}

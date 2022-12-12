@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/lambdaplayers/dayofdefeat/ussr_ppsh-41_baraban_front"
+	"$bumpmap" "models/lambdaplayers/dayofdefeat/ussr_ppsh-41_baraban_front_bump"	
+}
