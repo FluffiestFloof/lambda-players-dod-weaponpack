@@ -1,6 +1,6 @@
-# Lambda Players - Counter-Strike: Source Weapon Pack
-Adds Counter-Strike: Source weapons for the [Lambda Players](https://github.com/IcyStarFrost/Lambda-Players/).<br>
-Except the grenades.
+# Lambda Players - Day of Defeat: Source Weapon Pack
+Adds Day of Defeat: Source weapons, except the grenades, for the [Lambda Players](https://github.com/IcyStarFrost/Lambda-Players/).<br>
+The damage and spread values were inspired by the Zeta DOD weapons.
 
 ### Weapons implemented
 Currently implements the following weapons;
