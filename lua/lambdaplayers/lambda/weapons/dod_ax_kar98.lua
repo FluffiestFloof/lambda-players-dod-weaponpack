@@ -1,5 +1,5 @@
 local CurTime = CurTime
-local bullettbl = {}
+local bulletInfo = {}
 
 table.Merge( _LAMBDAPLAYERSWEAPONS, {
 
@@ -36,17 +36,17 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
 
             self:HandleMuzzleFlash( 1 )
 
-            bullettbl.Attacker = self
-            bullettbl.Damage = 12
-            bullettbl.Force = 12
-            bullettbl.HullSize = 5
-            bullettbl.Num = 1
-            bullettbl.TracerName = "Tracer"
-            bullettbl.Dir = ( target:WorldSpaceCenter() - wepent:GetPos() ):GetNormalized()
-            bullettbl.Src = wepent:GetPos()
-            bullettbl.Spread = Vector( 0.125, 0.125, 0 )
-            bullettbl.IgnoreEntity = self
-            wepent:FireBullets( bullettbl )
+            bulletInfo.Attacker = self
+            bulletInfo.Damage = 12
+            bulletInfo.Force = 12
+            bulletInfo.HullSize = 5
+            bulletInfo.Num = 1
+            bulletInfo.TracerName = "Tracer"
+            bulletInfo.Dir = ( target:WorldSpaceCenter() - wepent:GetPos() ):GetNormalized()
+            bulletInfo.Src = wepent:GetPos()
+            bulletInfo.Spread = Vector( 0.125, 0.125, 0 )
+            bulletInfo.IgnoreEntity = self
+            wepent:FireBullets( bulletInfo )
 
             self:RemoveGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER )
             self:AddGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER )
