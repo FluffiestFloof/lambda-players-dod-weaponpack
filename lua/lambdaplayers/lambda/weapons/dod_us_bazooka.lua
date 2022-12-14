@@ -41,7 +41,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
 
             self.l_WeaponUseCooldown = CurTime() + Rand( 3.0, 6.0 )
 
-            wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/rocket1.mp3" )
+            wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/rocket1.mp3", 80, 100, 1, CHAN_WEAPON )
 
             self:HandleMuzzleFlash( 7 )
 

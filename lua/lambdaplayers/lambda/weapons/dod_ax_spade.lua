@@ -22,7 +22,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
         callback = function( self, wepent, target )
             self.l_WeaponUseCooldown = CurTime() + 0.5
 
-            wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/spade_miss_"..random(2)..".mp3", 70, 100, 1, CHAN_WEAPON )
+            wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/spade_miss_"..random(2)..".mp3", 80, 100, 1, CHAN_WEAPON )
             self:RemoveGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE )
             self:AddGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE )
             
@@ -38,7 +38,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
                 dmginfo:SetDamageForce( ( target:WorldSpaceCenter() - self:WorldSpaceCenter() ):GetNormalized() * dmg )
                 target:TakeDamageInfo( dmginfo )
 
-                wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/spade_hit_"..random(3)..".mp3", 70 )
+                wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/spade_hit_"..random(3)..".mp3", 80, 100, 1, CHAN_WEAPON )
             end )
 
             return true
