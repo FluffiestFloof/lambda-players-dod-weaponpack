@@ -27,7 +27,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
             self:AddGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE )
             
             self:SimpleTimer( 0.25, function()
-                if !IsValid( target ) or self:GetRangeSquaredTo( target ) > ( 75 * 75 ) then return end
+                if !IsValid( target ) or !self:IsInRange( target, 75 ) then return end
 
                 local dmg = random( 12, 30 )
                 local dmginfo = DamageInfo()
