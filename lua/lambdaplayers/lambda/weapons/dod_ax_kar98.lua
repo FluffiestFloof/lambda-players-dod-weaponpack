@@ -52,7 +52,7 @@ table.Merge( _LAMBDAPLAYERSWEAPONS, {
             self:AddGesture( ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER )
             
             self:SimpleTimer( 0.2, function()
-                wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/k98_boltpull.mp3", 80, 100, 1, CHAN_WEAPON )
+                wepent:EmitSound( "lambdaplayers/weapons/dayofdefeat/k98_boltpull.mp3", 80 )
                 self:HandleShellEject( "RifleShellEject", Vector( -6, -1, 6 ), Angle( 0, -180, 0 ) )
             end)
 
